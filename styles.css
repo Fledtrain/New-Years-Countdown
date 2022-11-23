@@ -83,7 +83,7 @@ span.num {
 span.num::after {
   content: "";
   position: absolute;
-  background-color: var(--color-glass);
+  /* background-color: var(--color-glass); */
   height: 100%;
   width: 50%;
   left: 0;
