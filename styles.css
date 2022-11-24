@@ -105,13 +105,16 @@ span.text {
 }
 
 /* Media Queries */
-@media(max-width: 408px){
+@media(max-width: 412px){
  /* Shrink .wrapper by 20%*/
   .wrapper {
     transform: translate(-50%, -50%) scale(0.8);
   }
   span.text{
-    bottom:10px;
+    bottom:8px;
+  }
+  span.num{
+    backdrop-filter: blur(90px);
   }
   
 }
