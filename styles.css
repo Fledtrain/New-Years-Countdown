@@ -105,13 +105,13 @@ span.text {
 }
 
 /* Media Queries */
-@media(max-width: 768px){
- /* Shrink .wrapper by 5%*/
+@media(max-width: 408px){
+ /* Shrink .wrapper by 20%*/
   .wrapper {
     transform: translate(-50%, -50%) scale(0.8);
   }
   span.text{
-    bottom:16px;
+    bottom:12px;
   }
   
 }
