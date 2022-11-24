@@ -111,7 +111,7 @@ span.text {
     transform: translate(-50%, -50%) scale(0.8);
   }
   span.text{
-    bottom:12px;
+    bottom:10px;
   }
   
 }
