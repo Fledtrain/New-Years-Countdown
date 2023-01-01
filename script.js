@@ -5,9 +5,12 @@ let secBox = document.getElementById("sec-box");
 
 //Year, Month, Day, Hour, Minute, Second
 //Month is 0 indexed
-// let endDate = new Date(2022, 10, 24, 00, 00); //is for Thanksgiving
+// let endDate = new Date(2023, 10, 24, 00, 00); //is for Thanksgiving
+// let endDate = new Date(2023, 3, 16, 00, 00); //is for Joey Birthday
+// let endDate = new Date(2023, 7, 03, 00, 00); //is for Gianni Birthday
 
-let endDate = new Date(2023, 0, 1, 00, 00);
+
+let endDate = new Date(2024, 0, 1, 00, 00);
 
 let endTime = endDate.getTime();
 
