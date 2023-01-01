@@ -29,7 +29,7 @@ function countdown() {
     clearInterval(i);
     document.querySelector(
       ".countdown"
-    ).innerHTML = `<h1>Countdown has Expired</h1>`;
+    ).innerHTML = `<h1>HAPPY NEW YEAR🥳🎉🎊</h1>`;
   } else {
     let daysLeft = Math.floor(remainingTime / oneDay);
     let hrsLeft = Math.floor((remainingTime % oneDay) / oneHr);
