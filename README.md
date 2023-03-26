@@ -1,4 +1,3 @@
-
 # New Years Countdown
 Creating a New Years Countdown using HTML, CSS and JavaScript
 
