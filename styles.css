@@ -19,6 +19,7 @@ body {
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
+  overflow: hidden;
 }
 .wrapper {
   position: fixed;
@@ -26,6 +27,7 @@ body {
   top: 50%;
   left: 50%;
   font-size: 16px;
+  overflow: hidden;
 }
 
 .heading {
@@ -106,11 +108,11 @@ span.text {
 
 /* Media Queries */
 
-
 @media (max-width: 434px) {
   /* Shrink .wrapper by 20%*/
   .wrapper {
     transform: translate(-50%, -50%) scale(0.8);
+    overflow: hidden;
   }
   span.text {
     bottom: 8px;
@@ -121,8 +123,19 @@ span.text {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 390px) {
   span.num {
     font-size: 38px;
+  }
+  span.text {
+    font-size: 0.9em;
+  }
+}
+@media (max-width: 375px) {
+  span.num {
+    font-size: 33px;
+  }
+  span.text {
+    font-size: 0.9em;
   }
 }
