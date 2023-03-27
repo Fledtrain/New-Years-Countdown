@@ -1,7 +1,7 @@
-let dayBox = document.getElementById("day-box");
-let hrBox = document.getElementById("hr-box");
-let minBox = document.getElementById("min-box");
-let secBox = document.getElementById("sec-box");
+const dayBox = document.getElementById("day-box");
+const hrBox = document.getElementById("hr-box");
+const minBox = document.getElementById("min-box");
+const secBox = document.getElementById("sec-box");
 
 //Year, Month, Day, Hour, Minute, Second
 //Month is 0 indexed
@@ -9,21 +9,20 @@ let secBox = document.getElementById("sec-box");
 // let endDate = new Date(2023, 3, 16, 00, 00); //is for Joey Birthday
 // let endDate = new Date(2023, 7, 03, 00, 00); //is for Gianni Birthday
 
+const endDate = new Date(2024, 0, 1, 00, 00);
 
-let endDate = new Date(2024, 0, 1, 00, 00);
+const endTime = endDate.getTime();
 
-let endTime = endDate.getTime();
+const addZeroes = (num) => (num < 10 ? `0${num}` : num);
+// console.log(endDate); //testing to make sure it works
 
-let addZeroes = (num) => (num < 10 ? `0${num}` : num);
-console.log(endDate); //testing to make sure it works
-
-function countdown() {
-  let todayDate = new Date();
-  let todayTime = todayDate.getTime();
-  let remainingTime = endTime - todayTime;
-  let oneMin = 60 * 1000;
-  let oneHr = 60 * oneMin;
-  let oneDay = 24 * oneHr;
+const countdown = () => {
+  const todayDate = new Date();
+  const todayTime = todayDate.getTime();
+  const remainingTime = endTime - todayTime;
+  const oneMin = 60 * 1000;
+  const oneHr = 60 * oneMin;
+  const oneDay = 24 * oneHr;
 
   if (endTime < todayTime) {
     clearInterval(i);
@@ -41,6 +40,6 @@ function countdown() {
     minBox.textContent = addZeroes(minsLeft); //Displaying the minutes left
     secBox.textContent = addZeroes(secsLeft); //Displaying the seconds left
   }
-}
+};
 let i = setInterval(countdown, 1000);
 countdown();
